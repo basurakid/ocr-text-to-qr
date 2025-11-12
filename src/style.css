@@ -17,8 +17,9 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-bottom: 15rem;
+    padding-bottom: 15%;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 html {
@@ -27,7 +28,7 @@ html {
 }
 
 header {
-    min-height: 10rem;
+    min-height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +36,7 @@ header {
     margin-bottom: 2rem;
     
     background-color: #fff;
-    font-size: 2rem;
-    padding: 1.5rem;
+    padding: 3%;
 }
 
 header img {
@@ -57,7 +57,7 @@ div {
 
     border-radius: 2rem;
     background-color: #78BE20;
-    padding: 15rem 10rem;
+    padding: 15% 10%;
 }
 
 iframe {
@@ -89,7 +89,7 @@ button {
 }
 
 button img {
-    width: 30rem;
+    width: 90%;
 }
 
 #test{
@@ -98,7 +98,7 @@ button img {
 
 canvas{
     display: none;
-    margin-top: 10rem;
+    margin-top: 10%;
 }
 
 #qrCanvas {
