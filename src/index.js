@@ -60,8 +60,8 @@ clearPhoto();
 function takePicture() {
   const context = photoCanvas.getContext("2d");
   if (width && height) {
-    canvas.width = width;
-    canvas.height = height;
+    photoCanvas.width = width;
+    photoCanvas.height = height;
     context.drawImage(video, 0, 0, width, height);
 
     const data = photoCanvas.toDataURL("image/png");
