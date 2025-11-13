@@ -52,7 +52,7 @@ function clearPhoto() {
   context.fillStyle = "#aaaaaa";
   context.fillRect(0, 0, photoCanvas.width, photoCanvas.height);
 
-  const data = canvas.toDataURL("image/png");
+  const data = photoCanvas.toDataURL("image/png");
   photo.setAttribute("src", data);
 }
 clearPhoto();
