@@ -57,11 +57,6 @@ div {
     padding: 12% 10%;
 }
 
-iframe {
-    flex: 1;
-    width: 100vw;
-    border: none;
-}
 
 .permissionBtn {
     --s: 60px; /* the size on the corner */
