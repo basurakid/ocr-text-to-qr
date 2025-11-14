@@ -95,7 +95,7 @@ async function displayQr() {
   const canvas = document.querySelector("#qrCanvas");
   text.textContent = ret.data.text;
   QRCode.toCanvas(canvas,ret.data.text,{
-    width:500,
+    width:250,
   },(error)=>{
     if (error) 
       console.error(error);
