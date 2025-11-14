@@ -16,7 +16,7 @@ html, body {
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: 100vh;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -32,12 +32,11 @@ header {
     align-items: center;
     text-align: center;
     
-    background-color: #fff;
     padding: 3%;
 }
 
 header img {
-    max-width: 30%;
+    max-width: 200%;
 }
 main {
     display: flex;
