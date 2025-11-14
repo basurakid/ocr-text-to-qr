@@ -36,7 +36,7 @@ header {
 }
 
 header img {
-    max-width: 200%;
+    max-width: 20%;
 }
 main {
     display: flex;

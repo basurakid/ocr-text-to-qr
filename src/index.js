@@ -15,6 +15,15 @@ let height = 0; // This will be computed based on the input stream
 
 let streaming = false;
 
+(()=> {
+  const vh = window.innerHeight;
+  const header = document.getElementById('mainHeader');
+  const headerHeight = header ? header.offsetHeight : 0;
+
+  document.body.style.height = vh + "px";
+  document.querySelector("main").style.height = (vh - headerHeight) + 'px';
+})()
+
 allowBtn.addEventListener("click",()=>{
   let stream = null;
   navigator.mediaDevices
