@@ -66,8 +66,10 @@ function takePicture() {
 
     const data = photoCanvas.toDataURL("image/png");
     photo.setAttribute("src", data);
+
     cameraDiv.classList.toggle("hidden");
     allowBtn.classList.toggle("hidden");
+    displayQr();
   } else {
     clearPhoto();
   }
@@ -77,7 +79,7 @@ function takePicture() {
 async function displayQr() {
   const worker = await createWorker('eng');
   //add image to recognize
-  const ret = await worker.recognize();
+  const ret = await worker.recognize(photo);
   const canvas = document.querySelector("#qrCanvas");
   text.textContent = ret.data.text;
   QRCode.toCanvas(canvas,ret.data.text,{
