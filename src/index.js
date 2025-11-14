@@ -36,8 +36,8 @@ video.addEventListener("canplay", (ev) => {
 
     video.setAttribute("width", width);
     video.setAttribute("height", height);
-    canvas.setAttribute("width", width);
-    canvas.setAttribute("height", height);
+    photoCanvas.setAttribute("width", width);
+    photoCanvas.setAttribute("height", height);
     streaming = true;
   }
 });
