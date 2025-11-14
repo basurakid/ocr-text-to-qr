@@ -27,7 +27,7 @@ let streaming = false;
 allowBtn.addEventListener("click",()=>{
   let stream = null;
   navigator.mediaDevices
-    .getUserMedia({ video: {facingMode: "environment"}, audio: false })
+    .getUserMedia({ video: {height:200, facingMode: "environment"}, audio: false })
     .then((stream) => {
       cameraDiv.classList.toggle("hidden");
       allowBtn.classList.toggle("hidden");
